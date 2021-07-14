@@ -2,12 +2,13 @@
 ## Docs: http://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 # Site #站点信息
-title:  #标题
-subtitle:  #副标题
-description:  #站点描述，给搜索引擎看的
-author:  #作者
+title:  阿左狸化
+subtitle:  AZLH
+description:  左先生的乱话乱画
+author:  AZLH
 email:  #电子邮箱
 language: zh-CN #语言
+timezone: Asia/Shanghai
 # URL #链接格式
 url:  #网址
 root: / #根目录
@@ -66,5 +67,5 @@ plugins: #插件，例如生成 RSS 和站点地图的
 # Deployment #部署，将 lmintlcx 改成用户名
 deploy:
   type: git
-  repo: 刚刚github创库地址.git
+  repo: https://github.com/azlh/azlh.github.io.git
   branch: master
