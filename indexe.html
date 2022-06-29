@@ -19,7 +19,21 @@
 </head>
 
 <body>
-
+<script>
+    function AddFavorite(title,url){
+    try{
+        window.external.addFavorite(url,title);
+    }
+    catch(e){
+    try{
+        window.sidebar.addPanel(title,url,"");
+    }
+    catch(e){
+        alert("Sorry, the browser you are using cannot complete this operation.\n\nPlease use the shortcut key Ctrl+D ！");
+            }
+        }
+    }
+    </script>
 <div class="page-wrapper default-version">
  	
     <!-- Preloader -->
@@ -129,8 +143,8 @@
                                 <div class="text">I took time to stop and admire the last shout of fallen leaves as an organism. <br/>
 								This is both romantic and stupid.</div>
                                 <div class="link-btn">
-                                    <a href="index.html" class="theme-btn btn-style-one">中文</a>
-                                    <a href="#" class="theme-btn btn-style-two">Favorite</a>
+                                    <a href="http://azlh.github.io" class="theme-btn btn-style-one">中文</a>
+                                    <a href="javascript:void(0);" class="theme-btn btn-style-two" onclick="AddFavorite('AZLH','http://azlh.github.io')">Favorite</a>
                                 </div>
                                 <ul class="social-icon-two">
                                     <li><a href="http://facebook.com/zzcarl/"><span class="fa fa-facebook"></span></a></li>
